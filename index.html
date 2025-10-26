@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beziskry - Ekspercka wiedza o iskrobezpieczeństwie, normach ATEX i rozwiązaniach Ex.">
+    <title>Beziskry – Ekspercka wiedza o iskrobezpieczeństwie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="container nav-container">
+            <div class="logo">Beziskry</div>
+            <nav class="main-nav" aria-label="Główna nawigacja">
+                <a href="#start">Start</a>
+                <a href="#podstawy">Podstawy EX i ATEX</a>
+                <a href="#prawo">Prawo i Certyfikacja</a>
+                <a href="#analizy">Praktyka i Case Studies</a>
+                <a href="#narzedzia">Materiały do Pobrania</a>
+                <a href="#kontakt">Kontakt</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Przełącz tryb kolorystyczny">
+                <span class="icon-sun" aria-hidden="true"></span>
+                <span class="icon-moon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="start" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="tag">Ekspercki blog o Ex</span>
+                    <h1>Expert knowledge on industrial intrinsic safety</h1>
+                    <p>Beziskry to zaufane źródło wiedzy o iskrobezpieczeństwie (Ex i), normach ATEX i praktycznych wdrożeniach w przemyśle. Analizy, case studies i narzędzia dla inżynierów i specjalistów BHP.</p>
+                    <a class="cta" href="#kontakt">Skontaktuj się z nami</a>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="blueprint"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="podstawy" class="categories">
+            <div class="container">
+                <h2>Struktura wiedzy Beziskry</h2>
+                <p class="section-intro">Poznaj kluczowe obszary tematyczne – od podstaw ATEX po zaawansowane studia przypadków i narzędzia inżynierskie.</p>
+                <div class="category-grid">
+                    <article class="category-card">
+                        <div class="category-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" role="presentation">
+                                <rect x="10" y="10" width="44" height="44" rx="6" class="stroke"></rect>
+                                <path d="M16 40 L32 24 L48 40" class="stroke"></path>
+                                <circle cx="32" cy="24" r="4" class="fill"></circle>
+                            </svg>
+                        </div>
+                        <h3>Podstawy EX i ATEX</h3>
+                        <ul>
+                            <li>Co to jest iskrobezpieczeństwo (Ex i)</li>
+                            <li>Podział stref zagrożenia wybuchem: 0/1/2 vs 20/21/22</li>
+                            <li>Rodzaje ochrony: Ex i, Ex d, Ex e, Ex nR itd.</li>
+                            <li>Różnice Gas vs Dust</li>
+                            <li>Mity o ATEX i iskrobezpieczeństwie – obalamy</li>
+                            <li>FAQ: 10 najczęstszych pytań klientów o Ex</li>
+                        </ul>
+                    </article>
+                    <article id="prawo" class="category-card">
+                        <div class="category-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" role="presentation">
+                                <rect x="12" y="12" width="40" height="40" rx="4" class="stroke"></rect>
+                                <path d="M20 36 L44 36" class="stroke"></path>
+                                <path d="M24 24 L40 24" class="stroke"></path>
+                                <path d="M24 30 L32 30" class="stroke"></path>
+                            </svg>
+                        </div>
+                        <h3>Prawo i Certyfikacja</h3>
+                        <ul>
+                            <li>ATEX 114 vs ATEX 153 – różnice i praktyka w Polsce</li>
+                            <li>Polskie akty prawne i odniesienia do PN-EN/IEC 60079</li>
+                            <li>Rola UDT i PCA w systemie ATEX</li>
+                            <li>Jak weryfikować certyfikaty ATEX/IECEx (fałszywe certyfikaty, checklista)</li>
+                            <li>Proces certyfikacji urządzeń krok po kroku</li>
+                            <li>Lifecycle dokumentacji: jak tworzyć i utrzymywać DTR/DoC przez 10 lat</li>
+                        </ul>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" role="presentation">
+                                <circle cx="32" cy="32" r="20" class="stroke"></circle>
+                                <path d="M32 18 L32 46" class="stroke"></path>
+                                <path d="M22 32 L42 32" class="stroke"></path>
+                                <circle cx="32" cy="32" r="6" class="fill"></circle>
+                            </svg>
+                        </div>
+                        <h3>Dowodzenie Iskrobezpieczeństwa (Ex i)</h3>
+                        <ul>
+                            <li>Parametry C₀/L₀ vs Cᵢ/Lᵢ – jak je rozumieć</li>
+                            <li>Jak czytać entity parameters na tabliczce znamionowej</li>
+                            <li>Typowe błędy w dowodzeniu (z przykładami schematów)</li>
+                            <li>Przykładowe obliczenia z XLS (casebook)</li>
+                            <li>Mapa błędów projektowych – Top 5 błędów w schematach Ex</li>
+                        </ul>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" role="presentation">
+                                <rect x="14" y="18" width="36" height="28" rx="4" class="stroke"></rect>
+                                <path d="M22 26 L42 26" class="stroke"></path>
+                                <path d="M22 34 L38 34" class="stroke"></path>
+                                <circle cx="44" cy="34" r="4" class="fill"></circle>
+                            </svg>
+                        </div>
+                        <h3>Urządzenia, Bariery, Technologie</h3>
+                        <ul>
+                            <li>Bariery galwaniczne vs zasilacze Ex i</li>
+                            <li>Jak dobrać barierę do czujnika/pozycjonera</li>
+                            <li>Porównanie dostawców barier (P+F, R.STAHL, MTL itd.)</li>
+                            <li>Lifecycle urządzeń Ex: od zakupu do dekomisji</li>
+                            <li>Porównania Ex vs non-Ex – różnice techniczne i cenowe</li>
+                            <li>Ex nR w praktyce – kiedy restricted breathing ratuje projekt</li>
+                        </ul>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" role="presentation">
+                                <path d="M16 44 L48 44" class="stroke"></path>
+                                <path d="M20 20 L44 20" class="stroke"></path>
+                                <path d="M24 28 L40 28" class="stroke"></path>
+                                <circle cx="32" cy="36" r="6" class="fill"></circle>
+                            </svg>
+                        </div>
+                        <h3>Inspekcje i Utrzymanie Ruchu</h3>
+                        <ul>
+                            <li>PN-EN 60079-14 – projektowanie i instalacja</li>
+                            <li>PN-EN 60079-17 – inspekcje i konserwacja</li>
+                            <li>Harmonogramy przeglądów (checklista PDF)</li>
+                            <li>Najczęstsze błędy podczas inspekcji (zdjęcia z terenu)</li>
+                            <li>Szablony protokołów do inspekcji okresowych (Word/PDF)</li>
+                            <li>Jak czyścić urządzenia Ex w strefach pyłowych</li>
+                        </ul>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" role="presentation">
+                                <path d="M20 44 L44 20" class="stroke"></path>
+                                <circle cx="24" cy="24" r="6" class="fill"></circle>
+                                <circle cx="40" cy="40" r="6" class="fill"></circle>
+                            </svg>
+                        </div>
+                        <h3>Praktyka i Case Studies</h3>
+                        <ul>
+                            <li>Jak wygląda audyt ATEX w zakładzie</li>
+                            <li>10 różnic między pyłem a gazem, które psują inspekcje</li>
+                            <li>Najczęstsze awarie i jak ich unikać</li>
+                            <li>Przewodnik zakupowy – jak dział zakupów powinien wybierać dostawcę</li>
+                        </ul>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" role="presentation">
+                                <rect x="18" y="18" width="28" height="28" rx="8" class="stroke"></rect>
+                                <path d="M24 32 L40 32" class="stroke"></path>
+                                <path d="M32 24 L32 40" class="stroke"></path>
+                            </svg>
+                        </div>
+                        <h3>Nowe Technologie i Trendy</h3>
+                        <ul>
+                            <li>Ethernet-APL w strefach EX – plusy i minusy</li>
+                            <li>Cyfryzacja i IIoT w obszarach zagrożonych wybuchem</li>
+                            <li>Cyberbezpieczeństwo OT w strefach Ex</li>
+                            <li>Nowe standardy i przyszłość norm IEC/EN</li>
+                        </ul>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" role="presentation">
+                                <path d="M16 48 L32 16 L48 48" class="stroke"></path>
+                                <circle cx="32" cy="40" r="5" class="fill"></circle>
+                            </svg>
+                        </div>
+                        <h3>Branże i Zastosowania</h3>
+                        <ul>
+                            <li>ATEX w górnictwie</li>
+                            <li>ATEX w petrochemii i rafineriach</li>
+                            <li>ATEX w spożywce – mąka, cukier, pyły organiczne</li>
+                            <li>ATEX w farmacji – pyły farmaceutyczne</li>
+                            <li>ATEX w logistyce i silosach</li>
+                            <li>ATEX w branży baterii/lit</li>
+                        </ul>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" role="presentation">
+                                <path d="M18 46 L46 46" class="stroke"></path>
+                                <path d="M18 30 L46 30" class="stroke"></path>
+                                <path d="M18 22 L34 22" class="stroke"></path>
+                                <circle cx="44" cy="22" r="4" class="fill"></circle>
+                            </svg>
+                        </div>
+                        <h3>Edukacja i Poradniki</h3>
+                        <ul>
+                            <li>ATEX dla BHP-owca – co musi wiedzieć</li>
+                            <li>ATEX dla działu zakupów – jak nie kupić bubla</li>
+                            <li>ATEX dla projektanta instalacji elektrycznych</li>
+                            <li>Mini słownik: najważniejsze pojęcia i skróty Ex</li>
+                        </ul>
+                    </article>
+                    <article id="narzedzia" class="category-card">
+                        <div class="category-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" role="presentation">
+                                <rect x="18" y="18" width="28" height="28" rx="6" class="stroke"></rect>
+                                <path d="M24 36 L40 28" class="stroke"></path>
+                                <circle cx="26" cy="28" r="4" class="fill"></circle>
+                                <circle cx="38" cy="36" r="4" class="fill"></circle>
+                            </svg>
+                        </div>
+                        <h3>Materiały do Pobrania (Artefakty)</h3>
+                        <ul>
+                            <li>Kalkulator XLS do dowodzenia Ex i</li>
+                            <li>Checklista PDF do inspekcji PN-EN 60079-17</li>
+                            <li>Protokół inspekcyjny do druku (Word/PDF)</li>
+                            <li>Schematy przykładowe w EPLAN/Visio</li>
+                            <li>Przykładowa specyfikacja do działu zakupów</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="analizy" class="featured-articles">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Najnowsze analizy i artykuły</h2>
+                    <a class="cta ghost" href="#">Zobacz wszystkie</a>
+                </div>
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <div class="article-thumb" role="presentation"></div>
+                        <div class="article-meta">Praktyka i Case Studies</div>
+                        <h3>Jak wygląda audyt ATEX w zakładzie – krok po kroku</h3>
+                        <p>Przewodnik po etapach audytu, listach kontrolnych i najczęściej wykrywanych niezgodnościach.</p>
+                    </article>
+                    <article class="article-card">
+                        <div class="article-thumb" role="presentation"></div>
+                        <div class="article-meta">Dowodzenie Iskrobezpieczeństwa (Ex i)</div>
+                        <h3>Parametry C₀/L₀ vs Cᵢ/Lᵢ – praktyczne podejście projektanta</h3>
+                        <p>Jak interpretować parametry entity i zbalansować margines bezpieczeństwa z kosztami instalacji.</p>
+                    </article>
+                    <article class="article-card">
+                        <div class="article-thumb" role="presentation"></div>
+                        <div class="article-meta">Nowe Technologie i Trendy</div>
+                        <h3>Ethernet-APL w strefach EX – czego potrzebuje Twój zakład</h3>
+                        <p>Analiza wdrożeń w przemyśle chemicznym, wymagania certyfikacyjne i przyszłość komunikacji procesowej.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Zbudujmy razem bezpieczniejszy zakład</h2>
+                    <p>Zamów audyt, warsztat lub konsultacje Beziskry i przyśpiesz zgodność z ATEX. Odpowiadamy w 24h.</p>
+                    <a class="cta" href="#kontakt">Umów konsultację</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="kontakt" class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Beziskry</h3>
+                <p>Ekspercka wiedza o iskrobezpieczeństwie, regulacjach ATEX i praktyce utrzymania ruchu.</p>
+            </div>
+            <div>
+                <h4>Kontakt</h4>
+                <ul>
+                    <li><a href="mailto:kontakt@beziskry.pl">kontakt@beziskry.pl</a></li>
+                    <li><a href="tel:+48123456789">+48 123 456 789</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Informacje</h4>
+                <ul>
+                    <li><a href="#">Polityka prywatności</a></li>
+                    <li>© <span id="year"></span> Beziskry. Wszelkie prawa zastrzeżone.</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
